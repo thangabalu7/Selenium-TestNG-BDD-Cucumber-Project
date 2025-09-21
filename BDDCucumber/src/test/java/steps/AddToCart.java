@@ -45,6 +45,7 @@ public void userShouldNavigateToTheBookCartApplication() throws IOException {
 	setup.getDriver().get(getData("url"));
 	setup.getDriver().manage().window().maximize();
               setup.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+              System.out.println("____");
 	
 }
 @Given("User should login as {string} and {string} with validate credential")

@@ -23,8 +23,8 @@ public class Browsersetup {
 	}
 	
 	
-	public void setWait(WebDriverWait wait) {
-		this.wait = wait;
+	public void setWait(WebDriverWait wait1) {
+		this.wait = wait1;
 	}
 	
 }

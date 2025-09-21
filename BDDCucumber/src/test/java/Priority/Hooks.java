@@ -63,6 +63,7 @@ public class Hooks {
 		}
 		WebDriverWait wait = new WebDriverWait(setup.getDriver(), Duration.ofSeconds(10));
 		setup.setWait(wait);
+		System.out.println();
 	}
 
 	@After

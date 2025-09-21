@@ -13,7 +13,7 @@ Feature: BookCart application demo
     When User click the login button
     Then login should be success
 
- @smoke
+ @smokes
   Scenario: Login should be fail 
     And User enter the username as "koushik"
     

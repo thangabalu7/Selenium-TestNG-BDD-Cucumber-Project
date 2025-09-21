@@ -29,6 +29,7 @@ public class LoginSteps {
 	@Given("User clicks on the login link")
 	public void userClicksOnTheLoginLink() {
 		driver.findElement(By.xpath("//button[@mattooltip='Login']")).click();
+		System.out.println();
 
 	}
 

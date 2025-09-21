@@ -13,7 +13,7 @@ Feature: Bookcart application
       | username | password | book                                    |
       | ortoni   | pass1234 | Harry Potter and the Chamber of Secrets |
 
-    @Dev
+    @Devs
     Examples: 
       | username | password | book       |
       | ortoni   | pass1234 | Rot & Ruin |
