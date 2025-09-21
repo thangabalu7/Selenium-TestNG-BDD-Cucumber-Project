@@ -1,0 +1,23 @@
+<extentreports>
+  <configuration>
+  
+    <!-- Document title -->
+    <documentTitle>BDD Automation Results</documentTitle>
+
+    <!-- Report name shown on top -->
+    <reportName>Add a product to the cart</reportName>
+
+    <!-- Theme: STANDARD or DARK -->
+    <theme>DARK</theme>
+
+    <!-- Encoding type -->
+    <encoding>utf-8</encoding>
+
+    <!-- Timestamp format -->
+    <timeStampFormat>dd MMMM yyyy HH:mm:ss</timeStampFormat>
+
+    <!-- Enable/disable timeline view -->
+    <timelineEnabled>true</timelineEnabled>
+
+  </configuration>
+</extentreports>
