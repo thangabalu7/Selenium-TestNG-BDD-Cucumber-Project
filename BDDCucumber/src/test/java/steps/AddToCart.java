@@ -81,8 +81,10 @@ public static String getData(String data) throws IOException
 	Properties prop = new Properties();
 	prop.load(fls);
 	String datas = prop.getProperty(data);
-	return datas;
 	System.out.println("-------------------");
+	return datas;
+	
 }
 }
+
 
