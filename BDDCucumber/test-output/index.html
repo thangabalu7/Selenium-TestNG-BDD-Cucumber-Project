@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\thangrs\AppData\Local\Temp\testng-eclipse-607859990\testng-customsuite.xml</span>
+                    <span>C:\Users\thangrs\AppData\Local\Temp\testng-eclipse-1464011448\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,34 +129,14 @@
                   </a> <!-- runScenario("Add a product to the cart", "Bookcart application") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Add a product to the cart", "Bookcart application")</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=139.0.7258.139)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f900d96e5be3e31f982c36fd552f9bf, findElement {using=css selector, value=span[class =&apos;mdc-list-item__primary-text&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\thangrs\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59384/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f900d96e5be3e31f982c36fd552f9bf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at steps.AddToCart.userShouldSearchAWithValidateCredential(AddToCart.java:61)
-	at ✽.User should search a &quot;Harry Potter and the Chamber of Secrets&quot; with validate credential(src\test\java\story\addTocart.feature:7)
+                  <div class="stack-trace">java.io.FileNotFoundException: C:\Users\thangrs\eclipse-workspace\BDDCucumber\Datas\url.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
+	at steps.AddToCart.getData(AddToCart.java:79)
+	at steps.AddToCart.userShouldNavigateToTheBookCartApplication(AddToCart.java:45)
+	at ✽.User should navigate to the book cart application(src\test\java\story\addTocart.feature:5)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -168,7 +148,7 @@ Session ID: 9f900d96e5be3e31f982c36fd552f9bf
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\thangrs\AppData\Local\Temp\testng-eclipse-607859990\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\thangrs\AppData\Local\Temp\testng-eclipse-1464011448\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -229,12 +209,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunner.Runner')
-data.setCell(0, 3, 55024);
+data.setCell(0, 3, 14979);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -269,11 +249,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Add a product to the cart", "Bookcart application")</span>
-                <span class="method-start">482 ms</span>
+                <span class="method-start">564 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">55509 ms</span>
+                <span class="method-start">15545 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

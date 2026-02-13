@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Add a product to the cart</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">29 August 2025 19:49:06</span></a>
+<a href="#"><span class="badge badge-primary">11 December 2025 19:42:20</span></a>
 </li>
 </ul>
 </div>
@@ -100,7 +100,7 @@
           <div class="test-detail">
             <span class="meta text-white badge badge-sm"></span>
             <p class="name">Bookcart application</p>
-            <p class="text-sm"><span>19:49:06 PM</span> / <span>54.828 secs</span></p>
+            <p class="text-sm"><span>19:42:20 PM</span> / <span>14.803 secs</span></p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
@@ -108,9 +108,9 @@
 <div class="info">
 <div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
 <h5 class="test-status text-fail">Bookcart application</h5>
-<span class='badge badge-success'>08.29.2025 19:49:06</span>
-<span class='badge badge-danger'>08.29.2025 19:50:01</span>
-<span class='badge badge-default'>54.828 secs</span>
+<span class='badge badge-success'>12.11.2025 19:42:20</span>
+<span class='badge badge-danger'>12.11.2025 19:42:35</span>
+<span class='badge badge-default'>14.803 secs</span>
 </div>
 </div>
 </div>
@@ -129,49 +129,29 @@
                 </div>
               </div>
               <div class="card-body mt-3 ">
-                  <div class="step pass-bg">
+                  <div class="step fail-bg">
                     <span>Given User should navigate to the book cart application</span>
       <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User should login as "ortoni" and "pass1234" with validate credential</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>And User should search a "Harry Potter and the Chamber of Secrets" with validate credential</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=139.0.7258.139)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f900d96e5be3e31f982c36fd552f9bf, findElement {using=css selector, value=span[class ='mdc-list-item__primary-text']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\thangrs\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59384/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f900d96e5be3e31f982c36fd552f9bf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at steps.AddToCart.userShouldSearchAWithValidateCredential(AddToCart.java:61)
-	at ✽.User should search a "Harry Potter and the Chamber of Secrets" with validate credential(src\test\java\story\addTocart.feature:7)
+        <textarea disabled class="code-block">java.io.FileNotFoundException: C:\Users\thangrs\eclipse-workspace\BDDCucumber\Datas\url.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at steps.AddToCart.getData(AddToCart.java:79)
+	at steps.AddToCart.userShouldNavigateToTheBookCartApplication(AddToCart.java:45)
+	at ✽.User should navigate to the book cart application(src\test\java\story\addTocart.feature:5)
 </textarea>
       
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User should login as "ortoni" and "pass1234" with validate credential</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User should search a "Harry Potter and the Chamber of Secrets" with validate credential</span>
+      <div>Step skipped
       </div>
                   </div>
                   <div class="step skip-bg">
@@ -187,13 +167,15 @@ Session ID: 9f900d96e5be3e31f982c36fd552f9bf
                   <div class="step fail-bg">
                     <span>Hooks.afterScenario(Scenario)</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body > app-root:nth-child(1) > app-nav-bar:nth-child(1) > mat-toolbar:nth-child(1) > mat-toolbar-row:nth-child(1) > div:nth-child(3) > button:nth-child(2) > mat-icon:nth-child(2)"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f900d96e5be3e31f982c36fd552f9bf, findElement {using=css selector, value=body > app-root:nth-child(1) > app-nav-bar:nth-child(1) > mat-toolbar:nth-child(1) > mat-toolbar-row:nth-child(1) > div:nth-child(3) > button:nth-child(2) > mat-icon:nth-child(2)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\thangrs\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59384/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f900d96e5be3e31f982c36fd552f9bf
+Command: [b20ec873f411a8f1b331ef731b03c73c, findElement {value=body > app-root:nth-child(1) > app-nav-bar:nth-child(1) > mat-toolbar:nth-child(1) > mat-toolbar-row:nth-child(1) > div:nth-child(3) > button:nth-child(2) > mat-icon:nth-child(2), using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\thangrs\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51823}, goog:processID: 8708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51823/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b20ec873f411a8f1b331ef731b03c73c
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -208,7 +190,7 @@ Session ID: 9f900d96e5be3e31f982c36fd552f9bf
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at Priority.Hooks.afterScenario(Hooks.java:75)
+	at Priority.Hooks.afterScenario(Hooks.java:76)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at cucumber.runtime.Utils$1.call(Utils.java:26)
@@ -278,7 +260,7 @@ Session ID: 9f900d96e5be3e31f982c36fd552f9bf
 <ul class="tools text-right">
 <li>
 <a href="#">
-<span class="badge badge-primary">1</span>
+<span class="badge badge-primary">2</span>
 </a>
 </li>
 </ul>
@@ -288,13 +270,13 @@ Session ID: 9f900d96e5be3e31f982c36fd552f9bf
 <li class="test-item">
 <div class="open-test">
 <div class="test-detail">
-<p class="name">org.openqa.selenium.NoSuchSessionException</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchSessionException</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -307,19 +289,43 @@ Session ID: 9f900d96e5be3e31f982c36fd552f9bf
 <tbody>
 <tr>
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:49:55 PM</td>
+<td>19:42:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='12'>And User should search a "Harry Potter and the Chamber of Secrets" with validate credential</a>
+<a href="#" class="linked" test-id='1' id='20'>Hooks.afterScenario(Scenario)</a>
 <div class="">
 <span class="badge badge-default">Add a product to the cart</span>
 </div>
 </td>
 </tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="open-test">
+<div class="test-detail">
+<p class="name">java.io.FileNotFoundException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.io.FileNotFoundException</h4>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:49:59 PM</td>
+<td>19:42:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='20'>Hooks.afterScenario(Scenario)</a>
+<a href="#" class="linked" test-id='1' id='6'>Given User should navigate to the book cart application</a>
 <div class="">
 <span class="badge badge-default">Add a product to the cart</span>
 </div>
@@ -378,7 +384,7 @@ Session ID: 9f900d96e5be3e31f982c36fd552f9bf
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:49:06 PM</td>
+<td>19:42:20 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='3'>Add a product to the cart</a>
 <div class="">
@@ -412,13 +418,13 @@ Session ID: 9f900d96e5be3e31f982c36fd552f9bf
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>29 August 2025 19:49:06</h3>
+<h3>11 December 2025 19:42:20</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>29 August 2025 19:50:01</h3>
+<h3>11 December 2025 19:42:35</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -489,10 +495,10 @@ Session ID: 9f900d96e5be3e31f982c36fd552f9bf
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
 <small data-tooltip='33%'><b>2</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<b>4</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -533,10 +539,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
+passGrandChild: 0,
 failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 4,
 infoGrandChild: 0,
 eventsCount: 5,
 };

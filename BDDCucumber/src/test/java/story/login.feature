@@ -16,7 +16,6 @@ Feature: BookCart application demo
  @smokes
   Scenario: Login should be fail 
     And User enter the username as "koushik"
-    
     And User enter the passw	ord as "passkoush"
     When User click the login button
-    Then login should be failed
+    Then login should be failed.

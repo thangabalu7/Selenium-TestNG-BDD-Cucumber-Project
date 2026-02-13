@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 29 19:49:06 IST 2025</td>
+<td>Started on:</td><td>Thu Dec 11 19:42:19 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55896 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16018 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,65 +76,25 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: testRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to the cart", "Bookcart application"</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=139.0.7258.139)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f900d96e5be3e31f982c36fd552f9bf, findElement {using=css selector, value=span[class =&apos;mdc-list-item__primary-text&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\thangrs\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59384/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f900d96e5be3e31f982c36fd552f9bf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at steps.AddToCart.userShouldSearchAWithValidateCredential(AddToCart.java:61)
-	at ✽.User should search a &quot;Harry Potter and the Chamber of Secrets&quot; with validate credential(src\test\java\story\addTocart.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1896712674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1896712674'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=139.0.7258.139)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f900d96e5be3e31f982c36fd552f9bf, findElement {using=css selector, value=span[class =&apos;mdc-list-item__primary-text&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\thangrs\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59384/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f900d96e5be3e31f982c36fd552f9bf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at steps.AddToCart.userShouldSearchAWithValidateCredential(AddToCart.java:61)
-	at ✽.User should search a &quot;Harry Potter and the Chamber of Secrets&quot; with validate credential(src\test\java\story\addTocart.feature:7)
+<td><div><pre>java.io.FileNotFoundException: C:\Users\thangrs\eclipse-workspace\BDDCucumber\Datas\url.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
+	at steps.AddToCart.getData(AddToCart.java:79)
+	at steps.AddToCart.userShouldNavigateToTheBookCartApplication(AddToCart.java:45)
+	at ✽.User should navigate to the book cart application(src\test\java\story\addTocart.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace603184112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace603184112'><pre>java.io.FileNotFoundException: C:\Users\thangrs\eclipse-workspace\BDDCucumber\Datas\url.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
+	at steps.AddToCart.getData(AddToCart.java:79)
+	at steps.AddToCart.userShouldNavigateToTheBookCartApplication(AddToCart.java:45)
+	at ✽.User should navigate to the book cart application(src\test\java\story\addTocart.feature:5)
 </pre></div></td>
-<td>55</td>
+<td>14</td>
 <td>testRunner.Runner@25df00a0</td></tr>
 </table><p>
 </body>

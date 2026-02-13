@@ -3,12 +3,12 @@ package testRunner;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @cucumber.api.CucumberOptions(features = {"src/test/java/story/addTocart.feature"},
-dryRun=true,//to mapping the feature fine into step definition file
+dryRun=!true,//to mapping the feature fine into step definition file
 glue={"steps","Priority"},//only give steption definition folder name, Hooks package name 
 snippets=cucumber.api.SnippetType.CAMELCASE,//java is camelcase syntax language 
 monochrome=true,//remove the junk character in console output
 plugin = {"pretty",
-		//get the report from json report
+		//get the report from json report json:report/result.json
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 },
 tags = "@Test"
